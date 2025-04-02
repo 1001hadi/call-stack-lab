@@ -96,4 +96,10 @@ function findPrime(n) {
   return true;
 }
 
+// create function to display the prime numbers
+// declare array variable to keep the primes number
+// iterate over given number and if it's prime push it to array of prime
+// assign p tag text content to the value of the stored prime array with .join(',') method
+// display alert when the process end
+
 console.log(findPrime(11));
