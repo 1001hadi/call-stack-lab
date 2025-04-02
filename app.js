@@ -72,4 +72,25 @@ function flattenArr(arr) {
 }
 
 /* run the console.log for see the output */
-console.log(flattenArr(deepNestedArr));
+// console.log(flattenArr(deepNestedArr));
+
+/////////////////////
+////// 3rd part --->
+
+/* 
+Create a simple HTML element to hold text. Cache this HTML element into a JavaScript variable.
+Write a function that takes a parameter n and adds a list of all prime numbers between one and n to your HTML element.
+Once complete, use the alert() method to alert the user that the calculation is finished.
+*/
+
+//// check the prime number // formula comes from stack overFlow website
+function findPrime(n) {
+  for (i = 2; i <= n - 1; i++) {
+    if (n % i == 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log(findPrime(11));
