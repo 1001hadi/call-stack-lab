@@ -58,9 +58,9 @@ const deepNestedArr = [[[1, [2, [3, 4], 5]], [6, [[7, 8]], 9], [10]]];
 function flattenArr(arr) {
   let output = [];
 
-  function flatten(subArr) {
-    for (let item of subArr) {
-      if (Array.isArray(item) === item) {
+  function flatten(arr) {
+    for (let item of arr) {
+      if (Array.isArray(item)) {
         flatten(item);
       } else {
         output.push(item);
