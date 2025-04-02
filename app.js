@@ -86,20 +86,30 @@ Once complete, use the alert() method to alert the user that the calculation is 
 // cash the p tag to show the prime number in html file
 const storedPrime = document.getElementById("primeNumbers");
 
-//// check the prime number // formula comes from stack overFlow website
-function findPrime(n) {
-  for (i = 2; i <= n - 1; i++) {
-    if (n % i == 0) {
-      return false;
-    }
-  }
-  return true;
-}
-
 // create function to display the prime numbers
 // declare array variable to keep the primes number
 // iterate over given number and if it's prime push it to array of prime
 // assign p tag text content to the value of the stored prime array with .join(',') method
 // display alert when the process end
 
-console.log(findPrime(11));
+function handlePrimeNumbers(n) {
+  //// check the prime number // formula comes from stack overFlow website
+  function findPrime(n) {
+    for (i = 2; i <= n - 1; i++) {
+      if (n % i == 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+  const primeNum = [];
+  for (let i = 2; i <= n; i++) {
+    if (findPrime(i)) {
+      primeNum.push(i);
+    }
+  }
+  console.log(primeNum);
+}
+
+// console.log(findPrime(11));
+handlePrimeNumbers(100);
