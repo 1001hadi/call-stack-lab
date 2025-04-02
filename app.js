@@ -83,6 +83,9 @@ Write a function that takes a parameter n and adds a list of all prime numbers 
 Once complete, use the alert() method to alert the user that the calculation is finished.
 */
 
+// cash the p tag to show the prime number in html file
+const storedPrime = document.getElementById("primeNumbers");
+
 //// check the prime number // formula comes from stack overFlow website
 function findPrime(n) {
   for (i = 2; i <= n - 1; i++) {
