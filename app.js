@@ -60,10 +60,10 @@ function flattenArr(arr) {
 
   function flatten(subArr) {
     for (let item of subArr) {
-      if (item !== Array.isArray(item)) {
-        output.push(item);
-      } else {
+      if (Array.isArray(item) === item) {
         flatten(item);
+      } else {
+        output.push(item);
       }
     }
   }
