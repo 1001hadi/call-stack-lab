@@ -93,7 +93,7 @@ const storedPrime = document.getElementById("primeNumbers");
 // display alert when the process end
 
 function handlePrimeNumbers(n) {
-  //// check the prime number // formula comes from stack overFlow website
+  //// to check the prime number // formula hint comes from stack overFlow website
   function findPrime(n) {
     for (i = 2; i <= n - 1; i++) {
       if (n % i == 0) {
@@ -108,7 +108,9 @@ function handlePrimeNumbers(n) {
       primeNum.push(i);
     }
   }
-  console.log(primeNum);
+  storedPrime.textContent = `Prime number from 1 to ${n} are : ${primeNum}`;
+
+  alert(`All prime number founded!`);
 }
 
 // console.log(findPrime(11));
