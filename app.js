@@ -71,9 +71,11 @@ function flattenArr(arr) {
   return output;
 }
 
-/* run the console.log for see the output */
+/* un comment the console.log for see the output */
+
 // console.log(flattenArr(deepNestedArr));
 
+//
 /////////////////////
 ////// 3rd part --->
 
